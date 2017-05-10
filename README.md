@@ -4,6 +4,7 @@
 	 * 获取base64编码
 	 * @param {Object} url
 	 */
+	 
 	var getBase64 = function(url, option) {
 		// 兼容以“file:”开头的情况
 		if(0 != url.toString().indexOf("file://")) {
@@ -17,7 +18,7 @@
 			var w = that.width,
 				h = that.height,
 				scale = w / h;
-
+				
 			//480  你想压缩到多大，改这里
 			w = 480 || w;
 			h = w / scale;
